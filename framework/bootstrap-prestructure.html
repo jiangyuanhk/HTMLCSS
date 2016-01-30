@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="viewport" content="width=device-width, initial-scale=1">
     <title>Portofolio</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
   </head>
   <body>
@@ -38,7 +37,7 @@
       </div>
       <div class="row text-center">
         <div class="col-md-4">
-          <img class="img-responsive" src="http://placebear.com/555/300" alt="project 1">
+          <img class="img-responsive" src="http://placebear.com/555/300" alt="project 1" data-toggle="modal" data-target="#project1">
           <h3>Project1</h3>
           <p><a href="http://github.com">Link to project</a></p>
         </div>
@@ -54,5 +53,28 @@
         </div>
       </div>
     </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
   </body>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Project 1 Page</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="http://placebear.com/555/300">
+          Some detailed descriptions here.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
 </html>
